@@ -1,14 +1,56 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "auth": {
+    "token":"123456"
+  }
+  
+  "getBooking": {
+    "statuscode": "200"
+  }
+
+  "bookingByID": {
+    "firstname": "Josh",
+    "lastname": "Allen",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "super bowls"
+  }
+  
+  "postBooking": {
+    "bookingid": 2409,
+    "booking": {
+        "firstname": "Evelyn",
+        "lastname": "Marklew",
+        "totalprice": 200,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2023-02-27",
+            "checkout": "2023-03-02"
+        },
+        "additionalneeds": "Breakfast"
+    }
+  }
+  
+  "putBooking": {
+    "firstname": "Evelyn",
+    "lastname": "Marcelle",
+    "totalprice": 200,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2023-02-27",
+        "checkout": "2023-03-02"
+    },
+    "additionalneeds": "Breakfast"
+  }
+
+  "ping": {
+    "statusCode": 200;
+  }
+  
+  "deleteBooking": {
+    "return": "Created"
   }
 }
